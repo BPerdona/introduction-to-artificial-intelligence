@@ -463,13 +463,6 @@ cm.fit(X_census_treinamento, y_census_treinamento)
 cm.score(X_census_teste, y_census_teste)
 
 
-######### AULA 07 - GRIDSEACH ######### -> Dentro do arquivo trab
-
-
-
-
-
-
 
 
 
