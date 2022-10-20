@@ -190,3 +190,40 @@ previsoes_teste = regressor.predict(X_casas_teste)
 from sklearn.metrics import mean_absolute_error,mean_squared_error
 
 ######## ForestRegressor
+
+from sklearn.ensemble import RandomForestRegressor
+
+regressor = RandomForestRegressor(n_estimators=100)
+
+regressor.fit(X_casas_treinamento, y_casas_treinamento)
+
+
+regressor.score(X_casas_treinamento,y_casas_treinamento)
+
+regressor.score(X_casas_teste,y_casas_teste)
+
+previsoes_teste = regressor.predict(X_casas_teste)
+
+from sklearn.metrics import mean_absolute_error,mean_squared_error
+
+mean_absolute_error(y_casas_teste, previsoes_teste)
+
+
+### SVRRegressor
+
+from sklearn.svm import SVR
+
+regressor = SVR(kernel="rbf", C=100, gamma=0.1, epsilon=0.1)
+
+regressor.fit(X_casas_treinamento, y_casas_treinamento)
+
+
+regressor.score(X_casas_treinamento,y_casas_treinamento)
+
+regressor.score(X_casas_teste,y_casas_teste)
+
+previsoes_teste = regressor.predict(X_casas_teste)
+
+from sklearn.metrics import mean_absolute_error,mean_squared_error
+
+mean_absolute_error(y_casas_teste, previsoes_teste)
