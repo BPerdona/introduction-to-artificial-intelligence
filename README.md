@@ -78,3 +78,25 @@ Source Image
 
 64 Color with Source Image
 ![64andSource](ReadMeImages/64withSource.png)
+
+
+## Natural Language Processing
+### Topics
+- Lemmatization
+- Stimization
+- POS (Part-of-Speech)
+- Spacy (lib)
+- Text Processing
+  
+### Images
+
+![Text](ReadMeImages/ProcText.png)
+
+## Computer Vision
+### Topics
+- OpenCV (lib)
+- Face Detection
+- Body Detection
+- Facial Recognition
+- Object Tracking
+
